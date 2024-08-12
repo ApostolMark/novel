@@ -1,0 +1,6 @@
+# Map
+@back map
+@choice handler:ButtonArea button:Map/flag pos:186,-246 goto:lvl_1
+@choice handler:ButtonArea button:Map/flag pos:140,-200 goto:MiniGame if:FullMap=true
+@set FullMap=true 
+@stop

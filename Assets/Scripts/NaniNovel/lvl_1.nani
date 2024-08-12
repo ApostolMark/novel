@@ -1,0 +1,28 @@
+@back back1
+@char Няша.idle
+Няша: привет!
+@if HaveACat=false
+Няша: {Name} , можешь принести мне моего КОТА
+@hideChars
+@hidePrinter
+@goto Map.Map
+@stop
+@else
+Няша: спасибо!
+Няша: хотя знаешь.
+Няша: ты так ему нравишься
+Няша: может себе оставишь?
+@choice да , давай goto:.Yes
+@choice нет и точка goto:.No
+@stop
+
+#Yes
+Няша: давай только не на шаурму
+@hideChars
+@hidePrinter
+@stop
+#No
+Няша: тогда пойду сделаю из него суп!
+@hideChars
+@hidePrinter
+@stop
